@@ -7,7 +7,6 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 
 startConfetti = startConfettiInner;
 stopConfetti = stopConfettiInner;
-toggleConfetti = toggleConfettiInner;
 removeConfetti = removeConfettiInner;
 var colors = ["DodgerBlue", "rgb(235, 43, 52)", "SlateBlue"];
 // var colors = ["DodgerBlue", "OliveDrab", "Gold", "Pink", "SlateBlue", "LightBlue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"]
@@ -80,12 +79,6 @@ function removeConfettiInner() {
 	particles = [];
 }
 
-function toggleConfettiInner() {
-	if (streamingConfetti)
-		stopConfettiInner();
-	else
-		startConfettiInner();
-}
 
 function drawParticles(context) {
 	var particle;
